@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Nombre: <span id="name"></span></h1>
+    <p>Precio por hora: <span id="price"></span></p>
+    <ul>
+        <li>valor total <span id="total"></span></li>
+    </ul>
+    <h2 id="saludo"></h2>
+    <script>
+        fetch("http://localhost:3000/calculoTarifa/1")  // cambia el índice a 0, 1 o 2
+            .then((res) => res.json())
+            .then((data) => {
+                document.getElementById("name").textContent = data.mecanico.name;
+                document.getElementById("price").textContent = data.mecanico.price_hour;
+                document.getElementById("total").textContent = data.res;
+                console.log(data);
+            })
+            .catch((e) => {
+                console.error(e);
+            });
+        fetch("http://localhost:3000/saludo/Carlos")
+            .then((res) => { res.json })
+            .then((data) => {
+                document.getElementById("saludo").textContent = data.mensaje
+            })
+            .catch(e => console.log(e))
+    </script>
+</body>
+
+</html>

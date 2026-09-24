@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Mecánico</title>
+    <script src="./mecanicos.js" defer></script>
+    <link rel="stylesheet" href="mecanicos.css">
+</head>
+
+<body>
+    <h1>Registrar Mecánico</h1>
+
+    <form id="formMecanico">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" required>
+        <br><br>
+
+        <label for="level">Nivel:</label>
+        <input type="text" id="level" required>
+        <br><br>
+
+        <label for="price_hour">Precio por hora:</label>
+        <input type="number" id="price_hour" required>
+        <br><br>
+
+        <button type="submit">Registrar Mecánico</button>
+    </form>
+
+    <h2>Resultado</h2>
+    <pre id="resultado"></pre>
+</body>
+
+</html>

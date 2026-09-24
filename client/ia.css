@@ -1,0 +1,211 @@
+/* ia.css - Estilos para el chat IA de OPCMOTOS */
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Contenedor principal */
+.contenedor-chat {
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Tarjeta del formulario de chat */
+.form {
+    background: #ffffff;
+    padding: 30px 35px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.form:hover {
+    transform: translateY(-5px);
+}
+
+.form h2 {
+    margin: 0 0 20px;
+    color: #e94560;
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #555;
+}
+
+.form input[type="text"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    font-size: 1rem;
+    color: #000;
+    /* Texto negro */
+    transition: border-color 0.3s, box-shadow 0.3s;
+    outline: none;
+}
+
+.form input[type="text"]:focus {
+    border-color: #e94560;
+    box-shadow: 0 0 0 4px rgba(233, 69, 96, 0.15);
+}
+
+.form button {
+    width: 100%;
+    padding: 12px;
+    background: #e94560;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.form button:hover {
+    background: #c73652;
+    transform: scale(1.02);
+}
+
+.form button:active {
+    transform: scale(0.98);
+}
+
+/* Título de respuesta */
+h3 {
+    margin: 25px 0 10px;
+    color: #ffffff;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+/* Contenedor de respuesta de la IA */
+#respuestaIa {
+    background: #f8f9fa;
+    border-left: 6px solid #e94560;
+    padding: 20px;
+    border-radius: 8px;
+    min-height: 100px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-family: 'Courier New', monospace;
+    font-size: 0.95rem;
+    color: #2d3436;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+    max-height: 300px;
+}
+
+/* Contenedor del formulario dinámico */
+#formulario-dinamico {
+    background: #ffffff;
+    padding: 25px 30px;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+}
+
+#formulario-dinamico h3 {
+    color: #e94560;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Estilos para el formulario generado dinámicamente */
+#formulario-dinamico form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#formulario-dinamico label {
+    font-weight: 600;
+    color: #333;
+    font-size: 0.95rem;
+    margin-bottom: -5px;
+}
+
+#formulario-dinamico input[type="text"] {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 1rem;
+    color: #000;
+    /* Texto negro */
+    background: #f9f9f9;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    outline: none;
+}
+
+#formulario-dinamico input[type="text"]:focus {
+    border-color: #e94560;
+    box-shadow: 0 0 0 4px rgba(233, 69, 96, 0.15);
+    background: #ffffff;
+}
+
+#formulario-dinamico button {
+    padding: 12px 20px;
+    background: #e94560;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    align-self: flex-start;
+    margin-top: 5px;
+}
+
+#formulario-dinamico button:hover {
+    background: #c73652;
+    transform: translateY(-2px);
+}
+
+#formulario-dinamico button:active {
+    transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .form {
+        padding: 20px 25px;
+    }
+
+    .form h2 {
+        font-size: 1.5rem;
+    }
+
+    #respuestaIa {
+        padding: 15px;
+    }
+
+    #formulario-dinamico {
+        padding: 20px 25px;
+    }
+}

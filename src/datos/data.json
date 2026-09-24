@@ -1,0 +1,47 @@
+[
+    {
+        "name": "juseft",
+        "level": "A",
+        "price_hour": 100
+    },
+    {
+        "name": "marlon",
+        "level": "P",
+        "price_hour": 75
+    },
+    {
+        "name": "evertNever",
+        "level": "C",
+        "price_hour": 50
+    },
+    {
+        "name": "ana",
+        "level": "P",
+        "price_hour": 75
+    },
+    {
+        "name": "juan",
+        "level": "C",
+        "price_hour": 14
+    },
+    {
+        "name": "juan",
+        "level": "C",
+        "price_hour": 50
+    },
+    {
+        "name": "Daniel",
+        "level": "S",
+        "price_hour": 42
+    },
+    {
+        "name": "Jose Daniel",
+        "level": "SSS",
+        "price_hour": 1000000
+    },
+    {
+        "name": "Juan Manuel",
+        "level": "hhh",
+        "price_hour": 300000
+    }
+]

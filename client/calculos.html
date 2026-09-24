@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Tarifa</title>
+</head>
+
+<body>
+    <h1>Nombre: <span id="name"></span></h1>
+    <p>Precio hora: <span id="price"></span></p>
+    <ul>
+        <li>Valor total reparación moto: <span id="total"></span></li>
+    </ul>
+
+    <script>
+        fetch("http://localhost:3000/calculoTarifa/2")
+            .then((res) => res.json())
+            .then((data) => {
+                document.getElementById("name").textContent = data.mecanico.name;
+                document.getElementById("price").textContent = data.mecanico.price_hour;
+                document.getElementById("total").textContent = data.res;
+                console.log(data);
+            })
+            .catch((e) => {
+                console.error(e);
+            });
+    </script>
+</body>
+
+</html>

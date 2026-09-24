@@ -1,0 +1,52 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: wheat;
+    display: flex;
+    flex-direction: column;
+    /* Para apilar elementos verticalmente */
+    align-items: center;
+    /* Centra horizontalmente */
+    justify-content: center;
+    /* Centra verticalmente */
+    height: 100vh;
+    /* Ocupa toda la altura de la ventana */
+    padding: 20px;
+    /* Unidad px */
+    box-sizing: border-box;
+}
+
+h1 {
+    color: rgb(61, 128, 187);
+    margin-bottom: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    /* Para que los campos queden uno debajo del otro */
+    align-items: center;
+    /* Centra los elementos del formulario */
+    gap: 10px;
+    /* Espacio entre campos */
+    width: 100%;
+    max-width: 400px;
+    /* Ancho máximo */
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#mensaje {
+    margin-top: 20px;
+    text-align: center;
+}

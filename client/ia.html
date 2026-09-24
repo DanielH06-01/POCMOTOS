@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat IA - OPCMOTOS</title>
+    <link rel="stylesheet" href="./ia.css">
+</head>
+
+<body>
+    <div class="contenedor-chat">
+        <!-- Formulario de Chat con la IA -->
+        <form id="form-chat-ia" class="form">
+            <h2>Pregúntale a la IA de OPCMOTOS</h2>
+            <label for="preguntaIa">Escribe tu duda o pide crear/eliminar/modificar algo:</label>
+            <input type="text" id="preguntaIa"
+                placeholder="Ej: ¿Qué mecánicos cobran menos de $60 la hora? o 'Quiero agregar un repuesto'" required>
+            <button type="submit">Enviar pregunta</button>
+        </form>
+
+        <!-- Contenedor donde se mostrará la respuesta escrita por el bot -->
+        <h3>Respuesta de la IA:</h3>
+        <pre id="respuestaIa"></pre>
+
+        <!-- Contenedor para el formulario dinámico que generará la IA -->
+        <div id="formulario-dinamico"></div>
+    </div>
+
+    <script src="./ia.js"></script>
+</body>
+
+</html>

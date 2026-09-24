@@ -1,0 +1,52 @@
+[
+  {
+    "Modelo": "nkd 125",
+    "repuestos": "start",
+    "precio": 4500
+  },
+  {
+    "Modelo": "nkd 125",
+    "repuestos": "empaque",
+    "precio": 7000
+  },
+  {
+    "Modelo": "nkd 125",
+    "repuestos": "bobina",
+    "precio": 123000
+  },
+  {
+    "Modelo": "nkd",
+    "repuestos": "Rueda",
+    "precio": 35000
+  },
+  {
+    "Modelo": "nkd",
+    "repuestos": "motor",
+    "precio": 130000
+  },
+  {
+    "Modelo": "NKD",
+    "repuestos": "Bua",
+    "precio": 20000
+  },
+  {
+    "Modelo": "nkd",
+    "repuestos": "luces",
+    "precio": 10000
+  },
+  {
+    "Modelo": "nkd 125",
+    "repuestos": "luz trasera",
+    "precio": 120000
+  },
+  {
+    "Modelo": "nkd 30",
+    "repuestos": "cinta de mascarar",
+    "precio": 300000
+  },
+  {
+    "Modelo": "EK7",
+    "repuestos": "bobina",
+    "precio": 250000
+  }
+]
